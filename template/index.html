@@ -11,6 +11,7 @@
     <div class="grid-container">
       <header class="header">
         <div class="brand">
+          <button onclick="openMenu()">&#9776;</button>
           <a href="index.html">WebShop</a>
         </div>
         <div class="header-links">
@@ -18,7 +19,14 @@
           <a href="singin.html">Sign In</a>
         </div>
       </header>
-
+      <aside class="sidebar">
+        <h3>Shopping Categories</h3>
+        <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+        <ul>
+          <li><a href="index.html">Gaming Console</a></li>
+          <li><a href="index.html">Games</a></li>
+        </ul>
+      </aside>
       <main class="main">
         <div class="content">
           <ul class="products">
@@ -38,70 +46,77 @@
               </div>
             </li>
             <li>
-                <div class="product">
-                  <img
-                    class="product-image"
-                    src="images/pd1.jpg"
-                    alt="playstation 5"
-                  />
-                  <div class="product-name">
-                    <a href="product.html">Playstation 5</a>
-                  </div>
-                  <div class="product-brand">Sony</div>
-                  <div class="product-price">$900</div>
-                  <div class="product-rating">4.5 start (10 Reviews)</div>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/pd1.jpg"
+                  alt="playstation 5"
+                />
+                <div class="product-name">
+                  <a href="product.html">Playstation 5</a>
                 </div>
-              </li>
-              <li>
-                <div class="product">
-                  <img
-                    class="product-image"
-                    src="images/pd1.jpg"
-                    alt="playstation 5"
-                  />
-                  <div class="product-name">
-                    <a href="product.html">Playstation 5</a>
-                  </div>
-                  <div class="product-brand">Sony</div>
-                  <div class="product-price">$900</div>
-                  <div class="product-rating">4.5 start (10 Reviews)</div>
+                <div class="product-brand">Sony</div>
+                <div class="product-price">$900</div>
+                <div class="product-rating">4.5 start (10 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/pd1.jpg"
+                  alt="playstation 5"
+                />
+                <div class="product-name">
+                  <a href="product.html">Playstation 5</a>
                 </div>
-              </li>
-              <li>
-                <div class="product">
-                  <img
-                    class="product-image"
-                    src="images/pd1.jpg"
-                    alt="playstation 5"
-                  />
-                  <div class="product-name">
-                    <a href="product.html">Playstation 5</a>
-                  </div>
-                  <div class="product-brand">Sony</div>
-                  <div class="product-price">$900</div>
-                  <div class="product-rating">4.5 start (10 Reviews)</div>
+                <div class="product-brand">Sony</div>
+                <div class="product-price">$900</div>
+                <div class="product-rating">4.5 start (10 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/pd1.jpg"
+                  alt="playstation 5"
+                />
+                <div class="product-name">
+                  <a href="product.html">Playstation 5</a>
                 </div>
-              </li>
-              <li>
-                <div class="product">
-                  <img
-                    class="product-image"
-                    src="images/pd1.jpg"
-                    alt="playstation 5"
-                  />
-                  <div class="product-name">
-                    <a href="product.html">Playstation 5</a>
-                  </div>
-                  <div class="product-brand">Sony</div>
-                  <div class="product-price">$900</div>
-                  <div class="product-rating">4.5 start (10 Reviews)</div>
+                <div class="product-brand">Sony</div>
+                <div class="product-price">$900</div>
+                <div class="product-rating">4.5 start (10 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/pd1.jpg"
+                  alt="playstation 5"
+                />
+                <div class="product-name">
+                  <a href="product.html">Playstation 5</a>
                 </div>
-              </li>
-              
+                <div class="product-brand">Sony</div>
+                <div class="product-price">$900</div>
+                <div class="product-rating">4.5 start (10 Reviews)</div>
+              </div>
+            </li>
           </ul>
         </div>
       </main>
       <footer class="footer">All rights reserverd by JakGi</footer>
     </div>
+    <script>
+      function openMenu() {
+        document.querySelector(".sidebar").classList.add("open");
+      }
+      function closeMenu() {
+        document.querySelector(".sidebar").classList.remove("open");
+      }
+    </script>
   </body>
 </html>
