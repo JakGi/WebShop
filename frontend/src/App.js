@@ -31,7 +31,11 @@ function App() {
             <Link to="/">WebShop</Link>
           </div>
           <div className="header-links">
+            <Link to='/cart'>
             <a href="cart.html">Cart</a>
+
+            </Link>
+            
             {
               userInfo ? <Link to="/profile">{userInfo.name}</Link> :
                 <Link to="/signin">Sign In</Link>
